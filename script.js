@@ -1,5 +1,7 @@
 
-AOS.init();
+AOS.init({
+    once : true
+});
 
 gsap.registerPlugin(TextPlugin);
 gsap.to('.lead', {duration: 3, delay: 1.5, text: 'Web Developer | Administration'});

@@ -1,6 +1,4 @@
-$(document).ready(function () {
-    read();
-});
+
 
 // ketika pengunjung scroll kebawah 20px dari atas dokumen, maka tampilkan tombol scroll-btn
 window.onscroll = function () {
@@ -26,3 +24,29 @@ const scrollToTop = () => {
 };
 
 document.querySelector(".button-atas").onclick = scrollToTop;
+
+//script untuk mengirimkan pesan ke contact me
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxTdp24vUuJwIjohftlWUf3TElEniKAexroBJbYpM_TymdlKEHD1aLHrPYlIn_2i233/exec'
+const form = document.forms['submit-to-google-sheet']
+const btnKirim = document.querySelector('.btn-kirim');
+const btnLoading = document.querySelector('.btn-loading');
+const myAlert = document.querySelector('.my-alert');
+      
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    //tampilkan tombol loading, hilangkan tombol kirim
+    btnKirim.classList.toggle('d-none');
+    btnLoading.classList.toggle('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            console.log('Success!', response)
+            //tampilkan tombol kirim, hilangkan tombol loading
+            btnKirim.classList.toggle('d-none');
+            btnLoading.classList.toggle('d-none');
+            //tampilkan alert
+            myAlert.classList.toggle('d-none');
+            //reset form
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message))
+})

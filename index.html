@@ -8,7 +8,8 @@
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -29,7 +30,7 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#galery">Galery</a>
+                <a class="nav-link" href="#gallery">Gallery</a>
               </li> 
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Me</a>
@@ -43,8 +44,8 @@
     <!-- Awal Jumbotron -->
     <section class="jumbotron text-center" id="jumbotron">
         <img src="img/profile.jpg" alt="haris ais" id="profile" class="rounded-circle img-thumbnail">
-        <h1 class="display-4">I Wayan Haris Apriyana</h1>
-        <p class="lead">Web Developer | Administration</p>
+        <h1 class="display-4" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="3000">I Wayan Haris Apriyana</h1>
+        <p class="lead"></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,64L48,90.7C96,117,192,171,288,176C384,181,480,139,576,144C672,149,768,203,864,224C960,245,1056,235,1152,202.7C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
       </section>
     <!-- Akhir Jumbotron -->
@@ -53,13 +54,13 @@
     <section id="about">
         <div class="container">
             <div class="row text-center mb-3">
-                <div class="col">
+                <div class="col" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="3000">
                     <h2>About Me</h2>
                 </div>
             </div>
             <div class="row justify-content-center fs-5 text-center">
-                <div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum velit rerum voluptate id voluptas dolorum numquam, eius animi? Autem quae, molestias non iusto consequuntur soluta voluptatum excepturi atque, perferendis quos dicta provident suscipit. Itaque, doloremque! Rem tenetur nobis mollitia quis deserunt repellat similique, exercitationem dolorem, cum, eveniet beatae error?</div>
-                <div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, reprehenderit! Laudantium cupiditate, facilis cumque laboriosam, odit sapiente error suscipit adipisci alias iure eos. Molestiae incidunt temporibus totam cumque, recusandae architecto. Corporis repudiandae, veniam expedita animi dolore perspiciatis architecto. Nisi et, est cum inventore quia, magni dolorem nam quaerat deserunt eveniet reiciendis sapiente quidem ad officiis quam? Sit aperiam eius reprehenderit.</div>
+                <div class="col-md-4" data-aos="fade-right" data-aos-delay="300" data-aos-duration="2000">Saya adalah anak pertama dari 3 bersaudara dan sekarang sudah menikah dan memiliki 2 orang anak. Orang tua kedua adalah guru </div>
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="100" data-aos-duration="2000">Latar belakang pendidikan terakhir saya adalah S1 Ilmu Komputer, pernah menjadi seorang web developer dan desktop developer. Bahasa pemrograman yang pernah saya gunakan adalah PHP, JavaScript dan Visual Basic .net. Saya pernah menjadi staff administrasi.</div>
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#9ab0cc" fill-opacity="1" d="M0,32L48,74.7C96,117,192,203,288,208C384,213,480,139,576,138.7C672,139,768,213,864,208C960,203,1056,117,1152,80C1248,43,1344,53,1392,58.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -67,36 +68,36 @@
 
     <!-- Akhir About -->
 
-    <!-- Awal Galery -->
-    <section id="galery">
+    <!-- Awal Gallery -->
+    <section id="gallery">
         <div class="container">
-            <div class="row text-center mb-3">
+            <div class="row text-center mb-3"  data-aos="zoom-in-down" data-aos-duration="2000">
                 <div class="col">
-                    <h2>My Galery</h2>
+                    <h2>My Gallery</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     <div class="card">
                         <img src="img/galery/perpus.jpg" class="card-img-top" alt="perpus">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text">Menggunakan Laravel v.9 dan Boostrap v.5 masih dalam tahap development.</p>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-delay="200">
                     <div class="card">
                         <img src="img/galery/produk.jpg" class="card-img-top" alt="produk">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text">Menggunakan Laravel v.9  dan Boostrap v.5 dengan crud menggunakan ajax dengan bantuan JQuery.</p>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-delay="400">
                     <div class="card">
                         <img src="img/galery/movie.jpg" class="card-img-top" alt="movie">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text">Menggunakan  dan Boostrap v.5 dan mencoba mengakses public API dalam hal ini adalah API dari IMDB.</p>
                         </div>
                       </div>
                 </div>
@@ -104,13 +105,13 @@
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,112C384,128,480,224,576,218.7C672,213,768,107,864,85.3C960,64,1056,128,1152,154.7C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
-    <!-- Akhir Galery -->
+    <!-- Akhir Gallery -->
 
     <!-- Awal Contact -->
     <section id="contact">
         <div class="container">
             <div class="row-md-4 mb-3 text-center">
-                <div class="col">
+                <div class="col"  data-aos="zoom-out-up" data-aos-duration="2000">
                     <h2>Contact Me</h2>
                 </div>
             </div>
@@ -121,17 +122,17 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div>
                     <form name="submit-to-google-sheet">
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos-delay="200"  data-aos="zoom-out-up" data-aos-duration="2000">
                           <label for="name" class="form-label">Full Name</label>
                           <input type="text" class="form-control" id="name" aria-describedby="name" name="fullname">
                           <div id="name" class="form-text"></div>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos-delay="400"  data-aos="zoom-out-up" data-aos-duration="2000">
                           <label for="email" class="form-label">E-mail</label>
                           <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
                           <div id="email" class="form-text"></div>
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3" data-aos-delay="600"  data-aos="zoom-out-up" data-aos-duration="2000">
                             <label for="pesan" class="form-label">Message</label>
                             <textarea class="form-control" id="pesan" rows="3" name="message"></textarea>
                           </div>
@@ -163,6 +164,11 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <!-- error -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
     <script src="script.js"></script>
     
   </body>

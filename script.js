@@ -1,4 +1,12 @@
 
+AOS.init();
+
+gsap.registerPlugin(TextPlugin);
+gsap.to('.lead', {duration: 3, delay: 1.5, text: 'Web Developer | Administration'});
+
+gsap.from('.navbar', { duration: 2, y: -100, opacity: 0, ease: 'bounce'});
+gsap.from('.jumbotron img', { duration: 3, rotateY: 360, opacity: 0});
+gsap.from('.btn-kirim', { duration: 3, x: -100, opacity: 0, delay: 1, ease: 'back'});
 
 // ketika pengunjung scroll kebawah 20px dari atas dokumen, maka tampilkan tombol scroll-btn
 window.onscroll = function () {

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    .<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .kotak{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            margin: 50px auto;
+            display: flex;
+        }
+        .kotak h3{
+            margin: auto;
+            font-size: 2em;
+        }
+    </style>
+    <title>Coba TiltJS</title>
+</head>
+<body>
+    <div class="kotak" data-tilt>
+        <h3>Tulisan</h3>
+    </div>
+    <div class="kotak" data-tilt>
+        <h3>Tulisan</h3>
+    </div>
+    <div class="kotak" data-tilt>
+        <h3>Tulisan</h3>
+    </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- versi JQuery -->
+    <script src="tilt.jquery.min.js"></script>
+    <!-- versi vanila JavaScript -->
+    <!-- <script src="vanilla-tilt.min.js"></script> -->
+    <script>
+        const tilt = $('.kotak').tilt({glare: true, scale: 1.2, easing:         "cubic-bezier(.03,.98,.52,.99)", maxGlare: 1});
+        tilt.on('change', callback);  // parameters: event, transforms
+        tilt.on('tilt.mouseLeave', callback); // parameters: event
+        tilt.on('tilt.mouseEnter', callback); // parameters: event
+        
+    </script>
+</body>
+</html>

@@ -60,3 +60,11 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
+
+
+VanillaTilt.init(document.querySelectorAll(".gallery-img"), {
+    max: 25,
+    speed: 400,
+    // glare: true,
+    scale :1.5,
+});
